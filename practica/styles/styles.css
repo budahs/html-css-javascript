@@ -21,7 +21,7 @@ nav ul li a span{display:block;font-size:.6rem;font-weight:bold;display: block;-
 nav:hover ul li a span{color:var(--font-color);-webkit-transform: translateX(0px);transform: translateX(0px);}
 /*[NAVIGATION STYLES END]*/
 /*[HEADER STYLES]*/
-main header#home{display:block;height:100vh;width:100%;background-image: url(/practica/assets/home-bg.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;display:flex;align-items: center;}
+main header#home{display:block;height:100vh;width:100%;background-image: url(/assets/home-bg.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;display:flex;align-items: center;}
 main header .text-wrapper{display:block;position:relative;margin:0 auto;padding:50px;background-color:rgba(0,0,0,.5);font-size:2rem;border-radius:5px;}
 main header .text-wrapper h1{color:var(--palette-mid); margin:0px;}
 main header .text-wrapper h1 span{display:block;text-transform:uppercase;color:var(--contrast-color);margin-top:-10px;}
@@ -42,7 +42,7 @@ main section .container .contentWraper,main section .container header{width:100%
 #who .container header .profileImg img{width:100%;}
 #who .container .contentWraper > p{font-size:1.15rem;}
 #who .container .contentWraper footer{left:0%;bottom:25px;width:100%;}
-#who .container .contentWraper footer .column{-webkit-flex: 0 0 auto;-ms-flex: 0 0 auto;flex: 0 0 auto;width: 100%;border-top:2px solid #ececec;}
+#who .container .contentWraper footer .column{-webkit-flex: 0 0 auto;-ms-flex: 0 0 auto;flex: 0 0 auto;width: calc(99.999999% * 0.5);border-top:2px solid #ececec;}
 #who .container .contentWraper footer .column.email{flex:1.5;}
 #who .container .contentWraper footer .column a{color:var(--font-color);margin-top:16px;}
 #who .container .contentWraper footer .column.email a{display:block;} 
@@ -72,13 +72,14 @@ main section .container .contentWraper,main section .container header{width:100%
 
 
 /*********** [MEDIA QUERIES] ***********/
-@media screen and (min-width: 480px) {    
+@media screen and (min-width: 480px) {
+    
     #knowledge .container .contentWraper .box{-webkit-flex: 0 0 auto;-ms-flex: 0 0 auto;flex: 0 0 auto;width: calc(99.999999% * 0.5);}
     .sm-5{-webkit-flex: 0 0 auto;-ms-flex: 0 0 auto;flex: 0 0 auto;width: calc(99.999999% * 0.41667);}
     .sm-7{-webkit-flex: 0 0 auto;-ms-flex: 0 0 auto;flex: 0 0 auto;width:calc(99.999999% * 0.58333);}
 }
 @media screen and (min-width: 600px) {
-    #who .container .contentWraper footer .colum{width:50%; padding-right:1.5rem;}
+    #who .container .contentWraper footer .colum{width:50%;}
 }
 @media screen and (min-width: 768px) {
     #who .container .contentWraper{padding-bottom:150px;}
