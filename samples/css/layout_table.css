@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+.item {
+    background-color: coral;
+    margin: 1rem;
+    padding: 1rem;
+    color: azure
+}
+
+.table-wrapper {
+    margin: 1rem;
+    display: table;
+}
+
+nav {
+    width: 17%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    width: 60%;
+}
+aside {
+    width: 17%;
+}
+
+nav, main, aside {
+   display: table-cell;
+}

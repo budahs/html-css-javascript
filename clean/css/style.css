@@ -1,0 +1,183 @@
+:root {
+    --color-texto: black;
+    --color-fondo: white;
+    --color-aux: gray;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+}
+
+
+body>header>h1 {
+    font-size: 1.25rem;
+    margin: 0;
+    padding-top: 0.8rem;
+}
+
+section>header>h2 {
+    font-size: 5rem;
+    /* line-height: 100vh; */
+    /* position: absolute 50% / 50% transform translate -50% -50%; */
+    padding-top: 45vh;
+    margin: 0;
+}
+
+header {
+    color: var(--color-fondo);
+    font-family: 'Open Sans', sans-serif;
+}
+
+body>header {
+    position: fixed;
+    top: 2rem;
+    left: 5rem;
+    right: 5rem;
+    background-color: none;
+}
+
+article>h3 {
+    font-size: 2.5rem;
+}
+
+article>header>h2  {
+    font-size: 4rem;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+}
+nav a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 0rem 1rem 0.5rem 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.75rem
+}
+
+nav.mobil {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+nav.tablet {
+    display: none;
+}
+.active{
+    color:goldenrod;
+    font-size:1rem;
+}
+
+section>header, article>header {    
+    height: 100vh;
+    background-color: var(--color-aux);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;    
+}
+
+section header::after, article>header::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;
+    background-color:var(--color-texto);
+    opacity:0.1;    
+    z-index:-1;
+}
+
+
+.home-header {
+    background-image: url('../assets/home-bg.jpg')
+}
+.about-header {
+    background-image: url('../assets/about-bg.jpg')
+}
+.contact-header {
+    background-image: url('../assets/contact-bg.jpg')
+}
+.post-header {
+    background-image: url('../assets/post-bg.jpg')
+}
+
+.content-wrapper {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure {
+    margin: 1rem;
+    width: 50%;
+    float: right;
+} 
+figcaption {
+    font-size: 0.8rem;
+}
+.img-fluid {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.columnas {
+    column-count: 2;
+    column-gap: 2rem;
+}
+.parrafo-inicial {
+    margin-top: 0;
+}
+
+aside.social ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+aside.social a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+}
+/* Ejemplo de selector de clase 
+.red-title {
+    color: crimson;
+    font-size: 2rem;
+}
+*/
+/* Ejemplo del selector de atributo 
+[for="msg"] {
+    color: crimson;
+}
+*/
+
+form ul{list-style:none;}
+
+@media screen and (min-width: 768px) {
+    nav.mobil {
+        display: none;
+    }
+    nav.tablet {
+        display: initial;
+    }
+}

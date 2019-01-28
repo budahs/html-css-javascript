@@ -1,0 +1,17 @@
+header {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: brown;
+    color: bisque;
+    padding: 2rem 5rem;
+    transition-property:  all;
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(.67,.71,.86,.12);
+}
+
+header:hover {
+    background-color: bisque;
+    color: chocolate;
+    transform: scale(1.4, 1.2)
+}

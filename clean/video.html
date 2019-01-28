@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Uso del video en la web</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-WPmRkmY84I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Video insertado con iframe</p>
+    </section>
+    <section>
+        <h2>Video nativo</h2>
+        <video autoplay controls src="/repositorio/recursos/Ghost_in_the_Shell_Opening.mp4"></video>        
+    </section>
+    <section>
+            <h2>Video nativo con source (ie fix)</h2>            
+            <video src="">
+                <source src="/repositorio/recursos/Ghost_in_the_Shell_Opening.webm" type="video/webm">
+                <source src="/repositorio/recursos/Ghost_in_the_Shell_Opening.mp4" type="video/mp4">
+            </video>
+        </section>
+</body>
+</html>

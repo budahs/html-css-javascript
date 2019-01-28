@@ -1,0 +1,23 @@
+div {
+    border: 1px solid
+} 
+
+/*selector hijo*/
+div>p {
+    background-color: salmon;
+}
+
+/*selector descendiente siguiente*/
+div p {
+    color: brown
+}
+
+/*selector hermano adjacente siguiente*/
+div+p {
+    background-color: bisque
+}
+
+/*selector hermano*/
+div~p {
+    color: blue;
+}
